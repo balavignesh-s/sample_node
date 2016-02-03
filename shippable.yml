@@ -44,7 +44,7 @@ build:
     - echo "The job failed!!!!!"
     
   on_success:
-    - sleep 30
+    - sleep 75
     - echo "The job succeeded!!!!"
 
 deploy:
