@@ -31,7 +31,7 @@ build:
 #    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
-#    - ps -eax
+    - docker pull drydock/u12nodpls:tip
     - ls -al
 #    - if [ -f "/root/now.txt" ]; then cat /root/now.txt; fi
 #    - date > /root/now.txt
