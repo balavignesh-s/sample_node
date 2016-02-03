@@ -14,10 +14,10 @@ env:
     - FO1=BUBU
     - BOO=GUBU
 
-  matrix:
-    - M1=ONE
-    - M2=TWO
-    - M3=THREE
+#  matrix:
+#    - M1=ONE
+#    - M2=TWO
+#    - M3=THREE
 
 build:
 #  cache: true
