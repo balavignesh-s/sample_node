@@ -36,10 +36,10 @@ env:
     - M1=ONE
     - M2=TWO
 
-    include:
-      - rvm: 2.0.0
-        gemfile: gemfiles/Gemfile.rails-3.0.x
-        env: ISOLATED=false
+include:
+  - rvm: 2.0.0
+    gemfile: gemfiles/Gemfile.rails-3.0.x
+    env: ISOLATED=false
 
 build:
 #  cache: true
