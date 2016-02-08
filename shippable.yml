@@ -18,10 +18,9 @@ rvm:
 #  - jruby
 #  - ruby-head
 #  - ree
-#gemfile:
-
-#  - gemfiles/Gemfile.rails-2.3.x
-#  - gemfiles/Gemfile.rails-3.0.x
+gemfile:
+   - gemfiles/Gemfile.rails-2.3.x
+   - gemfiles/Gemfile.rails-3.0.x
 #  - gemfiles/Gemfile.rails-3.1.x
 #  - gemfiles/Gemfile.rails-edge
 
@@ -36,10 +35,10 @@ env:
     - M1=ONE
     - M2=TWO
 
-include:
-  - rvm: 2.0.0
-    gemfile: gemfiles/Gemfile.rails-3.0.x
-    env: ISOLATED=false
+#include:
+#  - rvm: 2.0.0
+#    gemfile: gemfiles/Gemfile.rails-3.0.x
+#    env: ISOLATED=false
 
 build:
 #  cache: true
