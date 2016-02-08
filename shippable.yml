@@ -5,7 +5,10 @@ rvm:
   - 1.8.7
   - 1.9.2
   - 1.9.3
-  
+gemfile:
+  - gemfiles/Gemfile.rails-2.3.x
+  - gemfiles/Gemfile.rails-3.0.x
+ 
 # Version number
 #node_js:
 #  - 0.40
@@ -29,14 +32,11 @@ services:
 
 env:
   global:
-    - FOO=FUBU
-    - FO1=BUBU
-    - BOO=GUBU
+    - FOO=BAR
 
   matrix:
     - M1=ONE
     - M2=TWO
-    - M3=THREE
 
 build:
 #  cache: true
