@@ -20,7 +20,10 @@ services:
 env:
   global:
     - FOO=BAR
-
+  matrix:
+    - M1=hello
+    - M2=world
+    - secure: 0tRl311TqOUnnr7SLGPC8KVMl9fDE/fIPIxU6bp2Ju8fFF4V23QnbHC+EiY/gvS1+zntiwgB7J4SjgEmBHlvAyP9MR6iMvntlG+k31VcxYqUGQzD/Ow0AC5MOo0vFz27LACMm0mR+YcdWs1QJUq96btN6ADCV9kLNbtyqPK/fR1nVY7jMWQ4ou89srpXqBvpv7mNxe4LK582FHlRGpebGVMS+3d5ovj8Q4kpWsSABpphUAj2ehLqioImb4y0gkUxR43yq2y/JZj6NLYcubd14h+WmPNZS9PphCxtLve1eLGLArklmnZ/mX/n6VLoe+Gm13gT+vZBqmEOfMDo1xHBwg==
 #include:
 #  - rvm: 2.0.0
 #    gemfile: gemfiles/Gemfile.rails-3.0.x
