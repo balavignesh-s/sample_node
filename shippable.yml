@@ -1,37 +1,51 @@
 # Language setting
+#language: node_js
 language: node_js
 
 # Version number
-node_js:
-  - 0.12
-  
+#node_js:
+#  - 0.40
+#rvm:
+#  - 1.8.7 # (current default)
+#  - 1.9.2
+#  - 1.9.3
+#  - rbx
+#  - jruby
+#  - ruby-head
+#  - ree
+
 services:
   - elasticsearch
 
 env:
   global:
-    - FOO=FUBU
-    - FO1=BUBU
-    - BOO=GUBU
-
-#  matrix:
-#    - M1=ONE
-#    - M2=TWO
+    - FOO=BAR
+    - FOO1=BAR1
+    - FOO2=BAR2
+  matrix:
+    - var1=hello
+    - var2=world
+    - secure: 0tRl311TqOUnnr7SLGPC8KVMl9fDE/fIPIxU6bp2Ju8fFF4V23QnbHC+EiY/gvS1+zntiwgB7J4SjgEmBHlvAyP9MR6iMvntlG+k31VcxYqUGQzD/Ow0AC5MOo0vFz27LACMm0mR+YcdWs1QJUq96btN6ADCV9kLNbtyqPK/fR1nVY7jMWQ4ou89srpXqBvpv7mNxe4LK582FHlRGpebGVMS+3d5ovj8Q4kpWsSABpphUAj2ehLqioImb4y0gkUxR43yq2y/JZj6NLYcubd14h+WmPNZS9PphCxtLve1eLGLArklmnZ/mX/n6VLoe+Gm13gT+vZBqmEOfMDo1xHBwg==
+#include:
+#  - rvm: 2.0.0
+#    gemfile: gemfiles/Gemfile.rails-3.0.x
+#    env: ISOLATED=false
 
 build:
 #  cache: true
 #  pre_ci:
 #    - docker build --rm -t=ragesh/sample_node2 .
 
-#  pre_ci_boot:
-#    image_name: drydock/u14nodall
-#    image_tag: prod
-#    pull: true
+  pre_ci_boot:
+    image_name: drydock/u14nodall
+    image_tag: prod
+    pull: true
 #    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
-#    - ps -eax
+    - docker pull drydock/u12nodpls:tip
     - ls -al
+    - echo $m1
 #    - if [ -f "/root/now.txt" ]; then cat /root/now.txt; fi
 #    - date > /root/now.txt
 #    - cat /root/now.txt
@@ -44,17 +58,19 @@ build:
     - echo "The job failed!!!!!"
     
   on_success:
+    - sleep 75
     - echo "The job succeeded!!!!"
 
 deploy:
   pre_build:
     - ls
-
-
+    - ls -al
+    
 integrations:
   hub:
-    - integrationName: balavignesh
+    - integrationName: ship-docker
       type: docker
       branches:
         only:
           - master
+
