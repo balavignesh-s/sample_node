@@ -49,5 +49,11 @@ build:
 deploy:
   pre_build:
     - ls
-    - ls -al
 
+integrations:
+  hub:
+    - integrationName: ship-docker
+      type: docker
+      branches:
+        only:
+          - master
