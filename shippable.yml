@@ -64,7 +64,7 @@ build:
 deploy:
   pre_build:
     - ls
-    - ls -al
+    - ls -l
     
     
 integrations:
