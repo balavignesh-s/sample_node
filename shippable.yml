@@ -45,6 +45,7 @@ build:
   ci:
     - docker pull drydock/u12nodpls:tip
     - ls -al
+    - echo $m1
 #    - if [ -f "/root/now.txt" ]; then cat /root/now.txt; fi
 #    - date > /root/now.txt
 #    - cat /root/now.txt
