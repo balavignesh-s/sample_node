@@ -20,6 +20,8 @@ services:
 env:
   global:
     - FOO=BAR
+    - FOO1=BAR1
+    - FOO2=BAR2
   matrix:
     - M1=hello
     - M2=world
