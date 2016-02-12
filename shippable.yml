@@ -69,7 +69,7 @@ deploy:
     
 integrations:
   hub:
-    - integrationName: ship-docker
+    - integrationName: balavignesh
       type: docker
       branches:
         only:
