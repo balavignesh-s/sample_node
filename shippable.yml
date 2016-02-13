@@ -22,10 +22,12 @@ env:
     - FOO=BAR
     - FOO1=BAR1
     - FOO2=BAR2
+    - secure: BBD9OtAMvCIaVqzwLOAllz7/B1l4VsaBVQuRLwuaCugUAhdnqHEUixGYRbxpNOtaM32UX1YGXh3fa3EP16ElcVj2z2M4BenLvQcO/1zZDtY3EtthMou1vtvU6TAmqPvWzP8lkPoSvSUlcb6/f+Pg51IX7mjy/PXJ1a+4Ra/nt2o+bD7rCq7KoXj68f1FGZDVB5AUcbIR4npjWW5VhUFVmztxhkGznjYEAuc9I2F1bxqsThVZCIhgQ/8Nh+qaZnpxOTP0NoeAbGnAU/AEFXsIttmOD9+1AZbseMJ5Lf2KeWCB9Dz8n3QkRA4q8EcaTXwMRsIB4t7bBYySQZ1nUtMang==
   matrix:
     - var1=hello
     - var2=world
     - secure: 0tRl311TqOUnnr7SLGPC8KVMl9fDE/fIPIxU6bp2Ju8fFF4V23QnbHC+EiY/gvS1+zntiwgB7J4SjgEmBHlvAyP9MR6iMvntlG+k31VcxYqUGQzD/Ow0AC5MOo0vFz27LACMm0mR+YcdWs1QJUq96btN6ADCV9kLNbtyqPK/fR1nVY7jMWQ4ou89srpXqBvpv7mNxe4LK582FHlRGpebGVMS+3d5ovj8Q4kpWsSABpphUAj2ehLqioImb4y0gkUxR43yq2y/JZj6NLYcubd14h+WmPNZS9PphCxtLve1eLGLArklmnZ/mX/n6VLoe+Gm13gT+vZBqmEOfMDo1xHBwg==
+    - secure: mkVsODnHPxiNt/vbGrm83Dx4mqO43ozdbdO+RukmTRha7ThjtU3MoZZFBe4S24ufX/cRCjLiVbeWJbIbbhWVNDiI7jc1VlIweL9RGU6Q3evG+u3qhZmoE8B4dRMRbILgvFJB4URIXEDHqilEUWJwptV0v/aPRhhFXTYaKekE90mFFQoANXKVJNSZOKZXzFuuAMk/N3KW78teIid/9CDUgwhKbJ2GIy7BMLzUxy+Mz3exUnVAewB7VFB5HzCfME8ht/4O632f9I+kD4+AK+KeXnENfP5+pvWC2sK0LtXBPNcDLgaywo67je0CLxHhR+kXLfO2UymK93kfJMyxm89GlQ==
 #include:
 #  - rvm: 2.0.0
 #    gemfile: gemfiles/Gemfile.rails-3.0.x
@@ -64,7 +66,7 @@ build:
 deploy:
   pre_build:
     - ls
-    - ls -al
+    - ls -l
     
     
 integrations:
