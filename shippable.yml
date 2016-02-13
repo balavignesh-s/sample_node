@@ -64,7 +64,6 @@ build:
 deploy:
   pre_build:
     - ls
-    - ls -l
 integrations:
   hub:
     - integrationName: balavignesh
