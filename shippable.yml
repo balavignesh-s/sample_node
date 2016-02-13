@@ -67,7 +67,6 @@ deploy:
     - ls
     - ls -l
     
-    
 integrations:
   hub:
     - integrationName: balavignesh
