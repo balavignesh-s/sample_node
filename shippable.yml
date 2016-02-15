@@ -53,6 +53,7 @@ build:
 deploy:
   pre_build:
     - ls
+    
 integrations:
   hub:
     - integrationName: myDocker
