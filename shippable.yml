@@ -57,7 +57,7 @@ deploy:
     
 integrations:
   hub:
-    - integrationName: myDocker
+    - integrationName: balavignesh
       type: docker
       branches:
         only:
