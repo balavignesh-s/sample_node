@@ -6,7 +6,7 @@ language: node_js
 #node_js:
 #  - 0.40
 services:
-  - elasticsearch
+  - memcached
 env:
   global:
     - FOO=BAR
@@ -15,7 +15,6 @@ env:
 
   matrix:
     - var1=hello
-    - secure: Qns4axL2SDEFkUD6+FqXHy6ZZBRqPXmXZfUsbSMB7ELPN7o/d7L1dIhrbUWTrWbZlhMA0uQQP+bbKQ81czR1Dq3C9SolBvB4qrmPUejiU1LZoDtQPN92qUape5UugPBUfmK+38x380XkuGHa0tAxHfCkOVuZQQegvctjEzHJDZOvP8d3SWAeUH+8qmfM8INNRqDrg2Y4B9v/3JYQJA37kMGHlTs78NsCpgiP2BS0QLaNvR8Ph9Vd5D5LvpWK0pebN1dvsossuGQPghgnPMJU/qEtxPDdOQFwO/mUqGfRvq3vfkDxG9cTon4QHJ84EOfR71cGT7tUPkrw4dK/qPp1Hg==
 #include:
 
 #  - rvm: 2.0.0
