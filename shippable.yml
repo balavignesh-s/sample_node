@@ -7,7 +7,6 @@ language: node_js
 #  - 0.40
 services:
   - elasticsearch
-
 env:
   global:
     - FOO=BAR
@@ -49,7 +48,6 @@ build:
     - echo "The job failed!!!!!"
     
   on_success:
-    - sleep 75
     - echo "The job succeeded!!!!"
 
 deploy:
