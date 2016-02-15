@@ -57,7 +57,7 @@ deploy:
     
 integrations:
   hub:
-    - integrationName: dock
+    - integrationName: myDocker
       type: docker
       branches:
         only:
