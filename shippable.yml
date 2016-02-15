@@ -12,10 +12,10 @@ env:
     - FOO=BAR
     - FOO1=BAR1
     - FOO2=BAR2
-    - secure: ULlVWgm0EMG3huKsj20KS/mZLEShhGMtEmo5nMMC4tnBED9UD6mr9AH+HCkUwY9Fuhg8uHDnhG8nuA9m6Wgek5ZdUGBdAVLjvzrU/8lnBZQdUxkXRvoKn0rRLUCywj7R47O5iq8ExZsdgk5aRDOYM4iQMk8TNQYqjk5VKJNgkDQPbYMcsxytzfIsXFZphU2LcqP2e+9ziBVn5/V+ud805qFMzaBlaJpUWFEcNCejit2YyFm7tU25o2A1JW07zlYH5RtsixXhdlcqA0prua9bio9yAqxpgTOJVdo/Dw41FPy/aeOpZlltLZ71F0QX6OC2xrVeE/eGm74c7YuS/UrcMQ==  matrix:
+    - secure: ULlVWgm0EMG3huKsj20KS/mZLEShhGMtEmo5nMMC4tnBED9UD6mr9AH+HCkUwY9Fuhg8uHDnhG8nuA9m6Wgek5ZdUGBdAVLjvzrU/8lnBZQdUxkXRvoKn0rRLUCywj7R47O5iq8ExZsdgk5aRDOYM4iQMk8TNQYqjk5VKJNgkDQPbYMcsxytzfIsXFZphU2LcqP2e+9ziBVn5/V+ud805qFMzaBlaJpUWFEcNCejit2YyFm7tU25o2A1JW07zlYH5RtsixXhdlcqA0prua9bio9yAqxpgTOJVdo/Dw41FPy/aeOpZlltLZ71F0QX6OC2xrVeE/eGm74c7YuS/UrcMQ==
   matrix:
     - var1=hello
-    - secure: k+/DvWNAoRP1l54A+SYe6EssdSQ93oLwNK1B/4B5D3ux51SgES+m/0gFg56GclxfiMEcKRr+RdxLlI2UD6pKy4tDukrzDxnZRJ2IjKX3BBinDwqs7mx15yaP2mH3beBYcTshakQ5TbshRtyFm0iEWellMjXuA9BIXM+u07QC4JF+GsmbbuZpktnBEvrTMc8jowbib4T0P5Ubwa/Ny/XRaWZQVg1Go+w8O4+AzH+JgnqMHU0WO9FqzNMgfj2IwSgJaPzx/qPm3tTEBES/8un8+XOLd8+Khzo8t8OsPlbGUXNq/+A1rjkNPNgvNZtKw2JZ25/Ylba3tZ9ilmI5w1pVSw==#include:
+    - secure: k+/DvWNAoRP1l54A+SYe6EssdSQ93oLwNK1B/4B5D3ux51SgES+m/0gFg56GclxfiMEcKRr+RdxLlI2UD6pKy4tDukrzDxnZRJ2IjKX3BBinDwqs7mx15yaP2mH3beBYcTshakQ5TbshRtyFm0iEWellMjXuA9BIXM+u07QC4JF+GsmbbuZpktnBEvrTMc8jowbib4T0P5Ubwa/Ny/XRaWZQVg1Go+w8O4+AzH+JgnqMHU0WO9FqzNMgfj2IwSgJaPzx/qPm3tTEBES/8un8+XOLd8+Khzo8t8OsPlbGUXNq/+A1rjkNPNgvNZtKw2JZ25/Ylba3tZ9ilmI5w1pVSw==
     - secure: WJ27UURIr9AHtovutD8fT0VOS2hzdv3EGSO6QbszjCSurATgypMKTJgTHCGNweSt1gh28bVSJKkOa8t5uayuNIKj71/CvLvlWw3D4Mh+iTtBbnBPDFR4+dEYcpi7PLP+VMySsNavT8U4zyZkIsJPImUBg/OXFZkphL7qTQbAV2ETemzle1ku4xk6s86R8RTa3kRqgJ2s3+YOQZGmwB8Jy/Sgto8yJk+yRiEPUpR6q7xpb2F0YZ1wBT8B0ROjr1bTsKluH/+UZDAx6Y0FUz9oAGvcf3xbWRZuCZt8GOVWZ4Qi167Zpt4EkQMxXaN8PHg+zArdn8v7FTtJTDEkfqpOtQ==
 #  - rvm: 2.0.0
 #    gemfile: gemfiles/Gemfile.rails-3.0.x
