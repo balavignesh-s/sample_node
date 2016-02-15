@@ -5,18 +5,8 @@ language: node_js
 # Version number
 #node_js:
 #  - 0.40
-#rvm:
-#  - 1.8.7 # (current default)
-#  - 1.9.2
-#  - 1.9.3
-#  - rbx
-#  - jruby
-#  - ruby-head
-#  - ree
-
 services:
   - elasticsearch
-
 env:
   global:
     - FOO=BAR
@@ -28,6 +18,7 @@ env:
     - secure: MjuiuHq9JiWRs1wlxe+LK2RBQHYPUSIU0DEwg5wHRFO4aMG7L3b3O+8ustLPKUc1/umS94IsGIdr1Edl8BR55ozKyCkkPSid+RVtMtMnbS6LJdKBFI0R78i3xzQTXO7QLnkhIEEPqHTfeey5ub4eQ2BvEYafeD+TcodL+GO6rCt23fWUzgPwqAK38p9AVmXC9+vf7Bngr0bVyUUKuEivP94E5kGZt5/akr7Zx1/pahLkf6l1UruzDQGxGyjEm4xe1tszyomWlYZ63nQV/jWyMJYy/1OeaN64NgaMRFIDeHgQiTuJa+ceh1WJUH3VMkRKBB6MUBa48h1YG0DoawwLkQ==
     - secure: nr35byPKj7lTMQB1K7fSgyLTiH4vzQv+fCUNsMCwabu5Vj35q5FLOrEXpwlw+9fSWELPuqcwyuSTgzDX/PTUCggL93QXblLSFatWfk8Jng40IR/HNL2oBtkcOdSLX+QeJjsEvkhcUQ291V6qVDOXgU1PqfO22he4f/3nwbWEH1Wb4kIb145D0J8F+rI6tIIq/lLopUVLL+k8AVdtYpcQUdIqzCpCjAh4LoWEwJezqzC6XUTZhQDEgSbeE6x7cH7HL4v+hDfvAhJZEPta78itMeNs9P2MKyHJuvk4se5OLePnvCUZYy8lUOthtzSjSfyoeTOHo3Df1Q3cFT+kRv2CsA==
 #include:
+
 #  - rvm: 2.0.0
 #    gemfile: gemfiles/Gemfile.rails-3.0.x
 #    env: ISOLATED=false
@@ -66,7 +57,7 @@ deploy:
     - ls
 integrations:
   hub:
-    - integrationName: balavignesh
+    - integrationName: myDocker
       type: docker
       branches:
         only:
