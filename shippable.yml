@@ -9,13 +9,19 @@ env:
 matrix:
   include:
     - python: 3.4
-      env: var1=one
+      env: FOO=ree BAR=test
   exclude:
     - python: 3.2
 
 python:
+  - 2.6
+  - 2.7
   - 3.2
+  - 3.3
   - 3.4
+  - 3.5
+  - pypy
+  - pypy3
 
 install:
   - pip install -r requirements.txt
