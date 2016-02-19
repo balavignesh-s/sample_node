@@ -7,9 +7,11 @@ language: node_js
 #  - 0.40
 services:
   - memcached
-env:
-  global:
-    - FOO=BAR FOO1=BAR1
+env: 
+  #global:
+   # - FOO=ree BAR=test
+  - REE=foo TEST=bar
+  
 
   matrix:
     - var1=hello
