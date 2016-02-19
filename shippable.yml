@@ -9,7 +9,7 @@ env:
 matrix:
   include:
     - python: 3.4
-
+      env: var1=one
   exclude:
     - python: 3.2
 
