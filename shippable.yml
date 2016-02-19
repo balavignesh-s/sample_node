@@ -51,11 +51,4 @@ build:
 deploy:
   pre_build:
     - ls
-integrations:
-  hub:
-    - integrationName: myDocker
-      type: docker
-      branches:
-        only:
-          - master
 
