@@ -9,7 +9,8 @@ env:
 matrix:
   include:
     - python: 3.4
-      env: FOO=ree BAR=test
+      env: 
+        - FOO=ree BAR=test
   exclude:
     - python: 3.2
 
