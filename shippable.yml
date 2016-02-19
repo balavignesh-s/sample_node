@@ -1,56 +1,45 @@
-# Language setting
-#language: node_js
-language: node_js
+language: python
+#build_image: shippableimages/ubuntu1204_python
 
-# Version number
-#node_js:
-#  - 0.40
-services:
-  - memcached
 env: 
   #global:
    # - FOO=ree BAR=test
   - REE=foo TEST=bar
   
+matrix:
+  include:
+    - python: 3.4
+      env: FOO=ree BAR=test
+  exclude:
+    - python: 3.2
 
-  matrix:
-    - var1=hello
-#include:
+python:
+  - 2.6
+  - 2.7
+  - 3.2
+  - 3.3
+  - 3.4
+  - 3.5
+  - pypy
+  - pypy3
 
-#  - rvm: 2.0.0
-#    gemfile: gemfiles/Gemfile.rails-3.0.x
-#    env: ISOLATED=false
+install:
+  - pip install -r requirements.txt
 
-build:
-#  cache: true
-#  pre_ci:
-#    - docker build --rm -t=ragesh/sample_node2 .
+# Make folders for the reports
+before_script:
+  - mkdir -p shippable/testresults
+  - mkdir -p shippable/codecoverage
 
-  pre_ci_boot:
-    image_name: drydock/u14nodall
-    image_tag: prod
-    pull: true
-#    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+script:
+  - which python
+  - coverage run `which nosetests` test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
+  - coverage xml -o shippable/codecoverage/coverage.xml
+  - echo "$FOO"
+  - echo "$BAR"
+  - echo "$REE"
+  - echo "$TEST"
 
-  ci:
-    - docker pull drydock/u12nodpls:tip
-    - ls -al
-    - echo $m1
-#    - if [ -f "/root/now.txt" ]; then cat /root/now.txt; fi
-#    - date > /root/now.txt
-#    - cat /root/now.txt
-#    - shippable_cache_container
-#    - if [ "$M2" == "TWO" ]; then foobar; fi
-
-#  smoke_test:
-#    - sudo ls /
-  on_failure:
-    - echo "The job failed!!!!!"
-    
-  on_success:
-    - echo "The job succeeded!!!!"
-
-deploy:
-  pre_build:
-    - ls
-
+notifications:
+  email:
+   - shiphitchcock1@gmail.com
