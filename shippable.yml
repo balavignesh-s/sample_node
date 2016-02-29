@@ -5,7 +5,7 @@ node_js:
 before_install:
   - ~/.nvm/nvm.sh && && nvm install v4.1.2
   - node --version
-  - npm install -f grunt-cli
+  - npm install -g grunt-cli
 
 install:
   - npm install
