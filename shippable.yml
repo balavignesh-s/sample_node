@@ -1,39 +1,14 @@
-language: python
+language: node_js
 #build_image: shippableimages/ubuntu1204_python
-
-env: 
-  #global:
-   # - FOO=ree BAR=test
-  - REE=foo TEST=bar
-  
-matrix:
-  include:
-    - python: 3.4
-      env: FOO=ree BAR=test
-  exclude:
-    - python: 3.2
-
-python:
-  - 3.2
-  - 3.4
+node_js:
+  - 0.10
+before_install:
+  - ~/.nvm/nvm.sh && && nvm install v4.1.2
+  - node --version
+  - npm install -f grunt-cli
 
 install:
-  - pip install -r requirements.txt
-
-# Make folders for the reports
-before_script:
-  - mkdir -p shippable/testresults
-  - mkdir -p shippable/codecoverage
+  - npm install
 
 script:
-  - which python
-  - coverage run `which nosetests` test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
-  - coverage xml -o shippable/codecoverage/coverage.xml
-  - echo "$FOO"
-  - echo "$BAR"
-  - echo "$REE"
-  - echo "$TEST"
-
-notifications:
-  email:
-   - shiphitchcock1@gmail.com
+  - true
